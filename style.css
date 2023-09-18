@@ -80,6 +80,10 @@ header button:hover {
     align-items: center;
   }
   
+  .aboutme button:hover {
+    color: red;
+    cursor: pointer;
+  }
   .project {
     padding: 10px;
     margin-bottom: 10px;
@@ -100,6 +104,11 @@ header button:hover {
     margin: auto;
     text-align: center;
     align-items: center;
+  }
+
+  .project button:hover {
+    color: red;
+    cursor: pointer;
   }
   
   footer {
