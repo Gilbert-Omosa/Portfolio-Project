@@ -1,42 +1,59 @@
 * {
+  margin: 0px;
+  padding: 0px;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* styling for the buttons */
 
   button {
     text-decoration: none;
-    background-color: lightgreen;
+    background-color: lightskyblue;
     color: black;
+    font-size: large;
     font-weight: bold;
     margin: 0 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
   }
   
+  button:hover {
+    color: red;
+    cursor: pointer;
+  }
+
+  /* styling the header */
+
   header {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 20px;
+    width: 90vw;
+    margin: auto;
+    padding: 40px 5% 20px 5%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    background-color: black;
+    color: white;
+    text-align: center;
   }
   
   nav ul {
-    list-style: none;
-    margin: 0;
+    list-style-type: none;
     padding: 0;
   }
   
   nav ul li {
     display: inline;
-    margin-left: 20px;
+    margin-right: 20px;
   }
   
   nav a {
@@ -44,79 +61,138 @@ body {
     text-decoration: none;
     font-weight: bold;
     margin: 20px;
+    padding: 15px;
   }
-
+  
   header a:hover {
+    text-decoration: none;
     color: red;
-}
+  }
 
-header button:hover {
+  header button:hover {
     color: red;
     cursor: pointer;
-}
+  }
+
+  /* styling the landing page */
   
-  section {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    margin-top: 20px;
-  }
-
-  #about {
+  #landing-page {
     display: flex;
-    justify-content: space-around;
-    padding: 10px;
-    margin-bottom: 10px;
-    font-size: x-large;
-    font-weight: 400;
-  }
-
-  .aboutme {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
+    flex-direction: row;
     align-items: center;
-  }
-  
-  .aboutme button:hover {
-    color: red;
-    cursor: pointer;
-  }
-  .project {
-    padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-around;
-    font-size: x-large;
-    font-weight: 300;
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
   }
 
-  .project img {
+  #landing-page .column {
     width: 50%;
-    height: 600px;
+    display: block;
+    line-height: 1.5;
   }
 
-  .project div {
+  #landing-page .column h1 {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  #landing-page .column h4 {
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  #landing-page .column p {
+    display: block;
+    font-size: 1.5em;
+  }
+
+  #landing-page .img {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* styling the services page */
+
+  #services {
+    width: 80vw;
+    height: 90vh;
+    margin: auto;
+  }
+
+  #services h1 {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  /* styling the main card container */
+
+  #services .cards {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+  }
+ 
+  #services .cards .project-card {
+    min-height: 40vh;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    text-align: center;
     align-items: center;
+    justify-content: space-around;
+    border: 5px solid lightskyblue;
+    width: 30%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
   }
 
-  .project button:hover {
-    color: red;
-    cursor: pointer;
+  #services .cards .project-card i {
+    font-size: 40px;
+    color: blue;
   }
   
+  #services .cards .project-card h4 {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+  
+  #services .cards .project-card p {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  /* styling the footer */
   footer {
     background-color: #333;
-    color: #fff;
+    color: white;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1em;
     padding: 10px;
-    bottom: 0;
-    width: 100%;
   }
   
+  footer #row1 {
+    text-align: center;
+    margin-bottom: 40px;
+    line-height: 40px;
+  }
+
+  footer #row2 {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer #row2 .icons {
+    display: flex;
+  }
+
+  footer #row2 .icons a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+  }
